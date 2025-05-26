@@ -108,6 +108,85 @@ Tipo Threads o Reddit, pero con diseño limpio:
 
 ---
 
-## 🔄 Siguiente paso
+¡Genial! Vamos a empezar por un **mockup básico del flujo principal de Clask**, con foco en la **pantalla de inicio y feed de publicaciones**.
 
-Si te interesa, puedo diseñarte un **mockup básico** de la pantalla principal o flujo de publicación, o ayudarte a organizarlo como tareas para desarrollo (frontend/backend). ¿Quieres que lo llevemos al siguiente nivel?
+Te lo describo paso a paso y luego te puedo armar un esquema visual en texto (wireframe) o ayudarte a crear un prototipo simple en React.
+
+---
+
+# 🖼️ Mockup básico - Pantalla principal (Feed)
+
+---
+
+### Barra superior (header)
+
+* Logo Clask 🎓 a la izquierda
+* Buscador central con placeholder:
+  *“¿Qué tema escolar te interesa?”*
+* Icono perfil o login a la derecha (avatar o botón)
+
+---
+
+### Feed principal (scroll vertical)
+
+Cada publicación aparece en una **tarjeta limpia** con:
+
+* **Título** en negrita
+* **Tags** pequeñas y coloridas (#Matemáticas, #Tips)
+* **Resumen breve** (1-2 líneas)
+* Barra inferior con:
+
+  * Botón 👍 “Útil” y contador
+  * Botón 💬 “Comentarios” y contador
+  * Guardar (🔖)
+
+---
+
+### Botón flotante para crear publicación
+
+* Esquina inferior derecha: botón circular con signo “+”
+* Tooltip: “Compartir un consejo”
+
+---
+
+### Navegación inferior (mobile)
+
+* Iconos grandes y claros:
+  🏠 Inicio | 🔍 Buscar | ➕ Crear | 💾 Guardados | 👤 Perfil
+
+---
+
+# 📋 Wireframe textual
+
+```
+-------------------------------------------------
+| 🎓 Clask            [Buscar: ¿Qué tema...]    👤 |
+-------------------------------------------------
+|                                               |
+|  [Título consejo 1]                           |
+|  #Matemáticas  #Exámenes                      |
+|  ¿Cómo estudiar álgebra rápido? Aquí unos... |
+|  👍 23    💬 5    🔖 Guardar                   |
+|-----------------------------------------------|
+|  [Título consejo 2]                           |
+|  #Historia #Tips                              |
+|  Preparar un ensayo puede ser fácil si...    |
+|  👍 14    💬 3    🔖 Guardar                   |
+|-----------------------------------------------|
+|                       +                       |
+|          (botón flotante crear)               |
+-------------------------------------------------
+| 🏠 | 🔍 | ➕ | 💾 | 👤 |
+-------------------------------------------------
+```
+
+---
+
+# 🛠️ ¿Qué sigue?
+
+1. **Mockup visual**: Puedo generar un diseño simple en Figma o directamente en React + CSS (estilo Tailwind o CSS Modules).
+2. **Organizar en tareas**: Dividir este flujo en componentes React y endpoints API.
+3. **Primer sprint**: Inicio rápido con login básico + feed + publicación.
+
+---
+
